@@ -9,7 +9,7 @@ El procesamiento de imágenes a través del método de promedio ponderado es una
 2. **Realce de características:** Este método se utiliza para resaltar características específicas en una imagen. Asignando un peso mayor a los píxeles de interés, se mejora la visibilidad de esas características, lo que es valioso en aplicaciones de segmentación y detección de objetos.
 3. **Filtrado espacial:** El promedio ponderado se usa como filtro espacial para suavizar o resaltar detalles en una imagen, como mejorar la apariencia de una imagen borrosa o realzar bordes.
 4. **Mejora de calidad:** Al ajustar los pesos de los píxeles, es posible mejorar la calidad visual de una imagen al eliminar el ruido y resaltar características deseadas. Útil en restauración de imágenes antiguas o dañadas.
-
+5. **Aplicaciones médicas:** En campos como la medicina, el procesamiento de imágenes con promedio ponderado es crucial para el diagnóstico y el seguimiento de enfermedades.
 ## Contenido del Repositorio
 ## Materiales y Métodos
 ### Lenguaje de Programación
