@@ -22,5 +22,11 @@ El proceso de aplicar un filtro de promedio ponderado a una imagen generalmente 
 ## Diseño
 ![Nombre de la ventana](https://github.com/AngelYoval/Proyecto_vision/assets/97262879/fd93b141-15e3-47dc-92ad-f9f156ec5324)
 
+## Bibliografia
+### Libros
+1. "Digital Image Processing" de González y Woods
+2. "Computer Vision: Algorithms and Applications" de Richard Szeliski
+### paginas web
+
 ## Concluciones
 **Nota:** Este repositorio se crea con fines educativos y de aprendizaje. ¡Agradecemos cualquier contribución y retroalimentación de la comunidad!
