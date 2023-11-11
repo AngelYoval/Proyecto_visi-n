@@ -3,14 +3,14 @@
 Este repositorio contiene el trabajo desarrollado en el marco de la experiencia educativa "Técnicas de Inteligencia Artificial". El objetivo principal de este proyecto es abordar el desafío del procesar una imagen atravez del metodo de promedio ponderado
 
 ## Descripción del Problema
-El procesamiento de imágenes a través del método de promedio ponderado es una técnica importante en el campo de la visión por computadora y el procesamiento de imágenes, ya que permite resaltar características específicas de una imagen, reducir el ruido y mejorar la calidad visual de una imagen. La importancia de este método radica en varias aplicaciones y ventajas clave:
+El procesamiento de imágenes a través del método de promedio ponderado es una técnica importante en el campo de la visión por computadora y el procesamiento de imágenes, ya que permite el suabisado de una imagen aplicando un metodo llamado Blur, esto es until a la hora de querer sensuarar imagener o perder informacion visual:
 
 El filtro de promedio ponderado se utiliza para difuminar una imagen de una manera controlada y suave, y la cantidad de suavizado se ajusta variando los valores en la máscara. Cuanto más grande sea la máscara o cuanto más se ponderen los píxeles cercanos al centro, mayor será el efecto de suavizado.
-
-Este filtro es útil en aplicaciones como reducción de ruido, mejora de la calidad de la imagen, eliminación de detalles no deseados y preprocesamiento de imágenes antes de aplicar técnicas más avanzadas en visión por computadora y procesamiento de imágenes. También es fundamental en la creación de efectos visuales, como el efecto de desenfoque gaussiano en fotografía y cine.
 ## Contenido del Repositorio
 ## Materiales y Métodos
-El filtro de promedio ponderado, también conocido como filtro de media ponderada o filtro de suavizado gaussiano, es una técnica de procesamiento de imágenes que se utiliza para suavizar o difuminar una imagen al promediar los valores de los píxeles en una región específica alrededor de cada píxel. A diferencia de un filtro de media simple, en el que todos los píxeles tienen el mismo peso en el promedio, el filtro de promedio ponderado asigna pesos diferentes a los píxeles en la vecindad según su distancia al píxel central.
+1. **Python**: Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Fue creado por Guido van Rossum y su primera versión fue lanzada en 1991. Python se ha vuelto extremadamente popular debido a su sintaxis clara y legible, lo que facilita su aprendizaje y uso. Algunas características destacadas de Python incluyen: Sintaxis legible, Interpretado, Tipado dinámico, Multiplataforma, Amplia biblioteca estándar, Programación orientada a objetos, etec.
+2. **OpenCV**: OpenCV, que significa Open Source Computer Vision, es una biblioteca de código abierto diseñada para el procesamiento de imágenes y visión por computadora. Fue inicialmente desarrollada por Intel y se ha convertido en una herramienta esencial en el ámbito de la visión por computadora debido a su versatilidad y eficiencia.
+3. 
 
 ### Lenguaje de Programación
 
