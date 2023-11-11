@@ -10,7 +10,8 @@ El filtro de promedio ponderado se utiliza para difuminar una imagen de una mane
 ## Materiales y Métodos
 1. **Python**: Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Fue creado por Guido van Rossum y su primera versión fue lanzada en 1991. Python se ha vuelto extremadamente popular debido a su sintaxis clara y legible, lo que facilita su aprendizaje y uso. Algunas características destacadas de Python incluyen: Sintaxis legible, Interpretado, Tipado dinámico, Multiplataforma, Amplia biblioteca estándar, Programación orientada a objetos, etec.
 2. **OpenCV**: OpenCV, que significa Open Source Computer Vision, es una biblioteca de código abierto diseñada para el procesamiento de imágenes y visión por computadora. Fue inicialmente desarrollada por Intel y se ha convertido en una herramienta esencial en el ámbito de la visión por computadora debido a su versatilidad y eficiencia.
-3. 
+3. **PyQt6** : PyQt6 es un conjunto de enlaces de Python para la biblioteca Qt, que es un marco de desarrollo de aplicaciones multiplataforma. PyQt6 permite a los desarrolladores crear aplicaciones de escritorio con una interfaz gráfica de usuario (GUI) utilizando Python.
+4. **Formato TIFF**: TIFF, que significa Formato de Archivo de Imagen Etiquetada (Tagged Image File Format, en inglés), es un formato de archivo de imagen popular y versátil utilizado para almacenar imágenes digitales. El formato TIFF es conocido por su capacidad para almacenar imágenes de alta calidad y para adaptarse a diversos tipos de datos de imagen, incluyendo imágenes en escala de grises, imágenes en color y imágenes con información de profundidad.
 
 ### Lenguaje de Programación
 
