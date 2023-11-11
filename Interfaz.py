@@ -1,6 +1,6 @@
 import cv2
 from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QLabel, QPushButton, QApplication, QSlider, QFileDialog, \
-    QSpacerItem, QSizePolicy
+    QSpacerItem, QSizePolicy, QHBoxLayout
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon, QKeySequence, QAction, QPixmap, QImage
 
@@ -19,9 +19,12 @@ class VentanaPrincipal(QMainWindow):
         self.image_label = QLabel(self)
         self.layout.addWidget(self.image_label)
 
+        button_layout = QHBoxLayout()
+
         #Boton para subir la imagen
         self.load_button = QPushButton("Cargar Imagen", self)
         self.layout.addWidget(self.load_button)
+        button_layout.addWidget(self.load_button)
         self.load_button.clicked.connect(self.load_image)
         self.load_button.setMaximumSize(300,40)
 
@@ -30,6 +33,7 @@ class VentanaPrincipal(QMainWindow):
         self.slider.setOrientation(Qt.Orientation.Horizontal)
         self.slider.setRange(0, 100)
         self.layout.addWidget(self.slider)
+        button_layout.addWidget(self.slider)
         self.slider.setMaximumSize(300,40)
 
         #Boton para aplicar el filtro
@@ -37,9 +41,10 @@ class VentanaPrincipal(QMainWindow):
         self.layout.addWidget(self.apply_button)
         self.apply_button.clicked.connect(self.apply_filter)
         self.apply_button.setMaximumSize(300,40)
+        button_layout.addWidget(self.apply_button)
 
-        self.layout.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignHCenter)
-
+        self.layout.addLayout(button_layout)
+        self.layout.setAlignment(Qt.AlignmentFlag.AlignHCenter)  # Alinea el layout principal en la parte inferior
     def load_image(self):
         file_dialog = QFileDialog(self)
         file_dialog.setNameFilter("Images (*.png *.xpm *.jpg *.bmp *.tif);;All Files (*)")
@@ -56,7 +61,9 @@ class VentanaPrincipal(QMainWindow):
             pixmap = QPixmap.fromImage(q_image)
             self.image_label.setPixmap(pixmap)
             self.image_label.setScaledContents(True)
-
+            self.image_label.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+            self.image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            self.image_label.setScaledContents(False)  # Evita que la imagen se estire
 
     def apply_filter(self):
         if self.image is not None:
