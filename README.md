@@ -15,11 +15,12 @@ El filtro de promedio ponderado se utiliza para difuminar una imagen de una mane
 El proceso de aplicar un filtro de promedio ponderado a una imagen generalmente implica los siguientes pasos:
 1. Definición de una máscara o núcleo: La máscara (kernel) es una matriz de números que especifica los pesos que se asignarán a los píxeles en la vecindad del píxel central. Los valores en la máscara determinan cómo se ponderan los píxeles circundantes. Por lo general, se utiliza una máscara simétrica y centrada, como una máscara gaussiana, que da más peso a los píxeles cercanos al centro y menos peso a los píxeles más alejados.
   la forma del la mascara es la sigiente:
-$$Kernel= \frac{1}{mn} \begin{bmatrix}
+$$ Kernel = \frac{1}{mn} \begin{pmatrix}
 1 & 1 & 1\\
 1 & a & 1\\
 1 & 1 & 1
-\end{bmatrix}$$
+\end{pmatrix} $$
+Donde m y n son las dimenciones del kernel y a es el valor que otorga el peso al pixel del centro.
 3. Colocación de la máscara en cada píxel de la imagen: La máscara se coloca sucesivamente en cada píxel de la imagen, y los valores de los píxeles subyacentes se multiplican por los valores correspondientes en la máscara.
 4. Suma de los valores ponderados: Se suman los valores ponderados de los píxeles para obtener el valor del píxel resultante. Este valor reemplazará al píxel original en la imagen, lo que suavizará la imagen.
 ## Mockup
